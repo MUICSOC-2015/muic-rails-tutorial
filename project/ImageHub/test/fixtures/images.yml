@@ -1,11 +1,10 @@
 # == Schema Information
 #
-# Table name: users
+# Table name: images
 #
 #  id         :integer          not null, primary key
-#  first_name :text
-#  last_name  :text
-#  age        :integer
+#  name       :text
+#  album_id   :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
@@ -13,11 +12,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  first_name: MyText
-  last_name: MyText
-  age: 1
+  name: MyText
+  album_id: 
 
 two:
-  first_name: MyText
-  last_name: MyText
-  age: 1
+  name: MyText
+  album_id: 
