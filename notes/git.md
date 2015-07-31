@@ -8,3 +8,7 @@
 - `git log`
 - `git checkout COMMIT-CODE`
 - `git checkout master`
+- `git branch`
+- `git branch NEWBRANCHNAME`
+- `git checkout BRANCHNAME`
+- `git merge FROMBRANCHNAME`  
