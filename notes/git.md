@@ -8,3 +8,7 @@
 - `git log`
 - `git checkout COMMIT-CODE`
 - `git checkout master`
+asdfasdffsdafdsa
+afdssfadsfadsdfa
+fasdfsadsdfafsdafd
+fadssafdfasd
