@@ -1,11 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Albums</h1>
+<h1 id="heading">Listing Albums</h1>
 
 <table class="table table-condensed table-striped">
   <thead>
     <tr>
-      <th>Name</th>
+      <th id="asdf">Name</th>
       <th>User</th>
       <th colspan="3"></th>
     </tr>
@@ -14,16 +14,34 @@
   <tbody>
     <% @albums.each do |album| %>
       <tr>
-        <td><%= album.name %></td>
-        <td><%= album.user.full_name %></td>
-        <td><%= link_to 'Show', album %></td>
-        <td><%= link_to 'Edit', edit_album_path(album) %></td>
-        <td><%= link_to 'Destroy', album, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td id="yyy" class='xxx'><%= album.name %></td>
+        <td id="asdf" class='xxx'><%= album.user.full_name %></td>
+        <td id="yyy" class='xxx'><%= link_to 'Show', album %></td>
+        <td id="yyy" class='xxx'><%= link_to 'Edit', edit_album_path(album) %></td>
+        <td id="yyy" class='xxx'><%= link_to 'Destroy', album, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    Hello
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+  <div class="panel-footer">Panel footer</div>
+</div>
+
 <br>
 
 <%= link_to 'New Album', new_album_path %>
+
+<% content_for :js do %>
+<script>
+  $('#heading').click(function(){
+    console.log(new Date())
+  })
+</script>
+<% end %>
