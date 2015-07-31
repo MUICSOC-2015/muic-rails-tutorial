@@ -1,5 +1,8 @@
 <p id="notice"><%= notice %></p>
 
+<%= image_tag @image.attachment(:original), class: 'img-responsive' %>
+<%= image_tag @image.attachment(:medium), class: 'img-responsive' %>
+<%= image_tag @image.attachment(:thumb), class: 'img-responsive' %>
 <p>
   <strong>Name:</strong>
   <%= @image.name %>
