@@ -21,7 +21,13 @@
     <![endif]-->
   </head>
   <body>
+    <% if user_signed_in? %>
+      <%= current_user.email %>
+      <%= link_to('Logout', destroy_user_session_path, :method => :delete, class: "btn btn-danger") %>
+    <% end %>
+
     <%= yield %>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

@@ -8,6 +8,7 @@
     # don't run this. rails g scaffold Album name:text user_id:integer:index
 
     rails g scaffold Album name:text user:references
+    rails g scaffold Image name:text album:references
 
 
     rake db:migrate
