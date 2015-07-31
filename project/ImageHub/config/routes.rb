@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'public/about'
+
+  get 'public/game'
+
   root to: 'albums#index'
 
   devise_for :users

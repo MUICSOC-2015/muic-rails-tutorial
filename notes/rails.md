@@ -14,6 +14,9 @@
 
     rake db:migrate
 
+    rails g controller Public about game
+
+
 ## info
 
 getbootstrap.com

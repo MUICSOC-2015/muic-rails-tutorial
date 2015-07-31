@@ -1,0 +1,28 @@
+<h1>Public#about</h1>
+<p>Find me in app/views/public/about.html.erb</p>
+
+
+USERS count <span id="users-count"><%= @users.count %></span><br>
+ALBUMS count <span id="albums-count"><%= @albums.count %></span><br>
+IMAGES count <span id="images-count"><%= @images.count %></span><br>
+
+<a href="#" class="btn btn-success" id="calculate-total-count" onclick="calculate_total(this)">Calculate total 1</a>
+<a href="#" class="btn btn-success" id="calculate-total-count" onclick="calculate_total(this)">Calculate total 2</a>
+<a href="#" class="btn btn-success" id="calculate-total-count" onclick="calculate_total(this)">Calculate total 3</a>
+
+<span id="total"></span>
+
+<% content_for :js do %>
+<script type="text/javascript">
+  var calculate_total = function(el){
+    console.log($(el).html())
+    $(el).html('bakkkkaaaaaa')
+    x = 0;
+    x += Number($('#users-count').html());
+    x += Number($('#albums-count').html());
+    x += Number($('#images-count').html());
+    $('#total').html(x);
+  }
+  // $('#calculate-total-count').click(calculate_total)
+</script>
+<% end %>
