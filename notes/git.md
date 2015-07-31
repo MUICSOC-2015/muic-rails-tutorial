@@ -12,3 +12,4 @@
 - `git branch NEWBRANCHNAME`
 - `git checkout BRANCHNAME`
 - `git merge FROMBRANCHNAME`  
+- `git pull`
