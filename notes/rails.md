@@ -10,6 +10,7 @@
     rails g scaffold Album name:text user:references
     rails g scaffold Image name:text album:references
 
+    rails g migration AddImageAttachmentToImage description:text
 
     rake db:migrate
 

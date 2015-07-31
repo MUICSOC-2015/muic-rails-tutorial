@@ -2,37 +2,7 @@
 
 <h1 id="heading">Listing Albums</h1>
 
-<table class="table table-condensed table-striped">
-  <thead>
-    <tr>
-      <th id="asdf">Name</th>
-      <th>User</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @albums.each do |album| %>
-      <tr>
-        <td id="yyy" class='xxx'><%= album.name %></td>
-        <td id="asdf" class='xxx'><%= album.user.full_name %></td>
-        <td id="yyy" class='xxx'><%= link_to 'Show', album %></td>
-        <td id="yyy" class='xxx'><%= link_to 'Edit', edit_album_path(album) %></td>
-        <td id="yyy" class='xxx'><%= link_to 'Destroy', album, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<div class="panel panel-primary">
-  <div class="panel-heading">
-    Hello
-  </div>
-  <div class="panel-body">
-    Panel content
-  </div>
-  <div class="panel-footer">Panel footer</div>
-</div>
+<%= render 'albums/albums', albums: @albums %>
 
 <br>
 
