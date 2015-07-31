@@ -35,6 +35,8 @@ class User < ActiveRecord::Base
   has_many :albums
   has_many :images, through: :albums
 
+  validates :first_name, presence: true, length: {minimum: 1, maximum: 5}
+
   def full_name
     return "#{self.first_name} #{self.last_name}"
   end
